@@ -1,7 +1,11 @@
 <?php
 
+use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    $message = 'Message from route: Route::get(/)';
+    return Inertia::render('Home', [
+        'message' => $message
+    ]);
 });
