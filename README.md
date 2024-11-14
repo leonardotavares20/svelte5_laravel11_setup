@@ -10,6 +10,28 @@ Laravel: 11
 pnpm install
 ```
 
+```
+cp .env.example .env
+```
+
+```
+composer install
+```
+
+```
+touch database/database.sqlite
+```
+
+```
+php artisan key:generate
+```
+
+```
+php artisan migrate
+```
+
+
+
 ## Run
 ```
 composer run dev
